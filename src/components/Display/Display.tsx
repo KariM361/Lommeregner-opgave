@@ -10,7 +10,7 @@ interface DisplayProps {
   current: string;
 
 }
- // Vi "destructurer" props direkte i parameteren
+ // "destructurer" props direkte i parameteren
 // Det betyder vi trækker previous, operation og current ud
 export const Display = ({ previous, operation, current }: DisplayProps) => {
  // return = det der vises på skærmen

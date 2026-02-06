@@ -1,5 +1,5 @@
 import { useReducer } from "react";
- // Det er "formen" på lommeregnerens data
+ //  "formen" på lommeregnerens data
 interface CalculatorState {
   current: string; // current = tallet brugeren er i gang med at skrive
   previous: string;// previous = det forrige tal (før operation)
@@ -28,7 +28,7 @@ function calculate(prev: number, curr: number, op: string) {
     case "*": return prev * curr;
      // beskytter mod division med 0
     case "/": return curr === 0 ? 0 : prev / curr;
-    // fallback hvis noget går galt
+    // hvis noget går galt
     default: return curr;
   }
 }
@@ -72,7 +72,7 @@ function reducer(state: CalculatorState, action: Action): CalculatorState {
         previous: "",
         operation: null,
       };
-      // fallback hvis ukendt action
+      // hvis ukendt action
     default:
       return state;
   }

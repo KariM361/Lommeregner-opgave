@@ -4,9 +4,9 @@ import { Button } from "../Buttons/Buttons";
 import style from '../Calculator/Calculator.module.scss'
  // Calculator komponenten
 export const Calculator = () => {
-        // henter state + funktioner fra vores hook
-  // state = data (tal + operation)
-  // funktionerne ændrer state
+ // henter state + funktioner fra vores hook
+ // state = data (tal + operation)
+ // funktionerne ændrer state
   const { state, addDigit, chooseOperation, clear, calculate } = useCalculator();
  
   return (
