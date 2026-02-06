@@ -1,3 +1,5 @@
+import style from './Display.module.scss'
+
 // Interface beskriver hvilke props komponenten forventer.
 // Props = data der sendes IND i komponenten.
 interface DisplayProps {
@@ -15,14 +17,14 @@ interface DisplayProps {
 export const Display = ({ previous, operation, current }: DisplayProps) => {
  // return = det der vises på skærmen
   return (
-<div className="display">   {/* ydre container til displayet*/}
-<div className="previous">  {/* Viser tidligere tal + operation */}
+<div className={style.display}>  
+<div className={style.previous}>  
    
         {previous} {operation}
 </div>
 
  {/*Hvis current er tom → vis 0 i stedet || betyder "fallback værdi" */}
-<div className="current">{current || 0}</div>
+<div className={style.current}>{current || 0}</div>
 </div>
 
   );
