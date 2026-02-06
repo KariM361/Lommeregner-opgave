@@ -1,0 +1,17 @@
+
+.calculator {
+  width: 250px;          
+  margin: 40px auto;
+  background-color: rgb(224, 72, 216);
+  border: 3px solid rgb(34, 30, 30);
+  border-radius: 20px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(49, 48, 48, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background-color: rgb(182, 83, 207);
+}
